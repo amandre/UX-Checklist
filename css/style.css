@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* Author: ANDRZEJ AMGHAR 2018
+ALL RIGHTS RESERVED, WSZYSTKIE PRAWA ZASTRZEZONE */
+
+
+@font-face
+{
+	font-family: "Lato";
+	src: url("../fonts/Lato-Medium.ttf");
+}
+
+html, body
+{
+	font-size: 1em;
+	font-family: arial, verdana, tahoma, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#logo {
+    font-family: "Lato";
+    text-align: center;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #006699;
+}
+#description {
+    font-family: "Lato";
+    text-align: center;
+    background-color: #F2F2F2;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+}
+
+#description:before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    border-bottom: 10px solid #6699FF;
+    bottom: 0px;
+}
+
+.icons {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icons img {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.icons div {
+    margin:10px 0;
+}
+
+#checklist {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.checklist_btn {
+    padding: 20px 20px;
+    font-weight: bold;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    max-height: 200px;
+}
+
+.checklist_btn:hover {
+    background-color: #e6e6e6;
+}
+
+#checklist > div {
+    display: none;
+    position: absolute;
+    padding: 20px 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #e6e6e6;
+    font-size: 0.8em;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+#checklist > p {
+    text-align: center;
+    
+}
+
+#ux_form > p {
+    text-align: center
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.options p {
+    margin: 0 10px;
+}
+
+.questions {
+    margin: 0 20px;
+}
+
+#checklist b {
+    color: #006699;
+}
+
+#checklist h3 {
+    text-align: center;
+}
+
+#checklist li {
+    margin: 40px auto;
+    list-style-type: none;
+    position: relative;
+}
+
+#checklist li:first-of-type {
+    margin-top: 20px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    margin-right: 15px;
+}
+
+.checkboxes {
+    margin: 5px 0 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #66CC66;
+    color: #333333;
+    font-weight: bold;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    max-width: 30px;
+    margin-left: 5px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #6699CC;
+    display: none;
+}
+
+#question_btn {
+        display: inline-block;
+        background-color: #6699CC;
+        padding: 10px 20px;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    #question_btn:hover, #question_btn:active {
+        background-color: #8cb3d9;
+    }
+
+@media only screen and (min-width: 361px) /* tablet */
+{
+    #description {
+        width: 80%;
+        margin: 0px auto;
+    }
+    
+    .icons {
+        margin: 40px auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .icons img {
+        width: 100%;
+    }
+    
+    footer {
+        display: flex;
+    }
+    
+    #about {
+        color: #FFFFFF;
+        margin-left: 10px;
+        max-width: 35%;
+    }
+    
+    #social_icons {
+        position: absolute;
+        right: 0;
+        top: 30%
+    }
+    
+    #social_icons img {
+        margin: 10px;
+        width: 20%;
+    }
+
+    .checklist_btn {
+        padding: 20px 20px;
+        font-weight: bold;
+        background-color: #F2F2F2;
+        cursor: pointer;
+        max-height: 500px;
+        margin: 0px 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) /* desktop */
+{
+    #logo {
+        font-size: 2em;
+    }
+    
+    footer {
+        display: block;
+    }
+    
+    .checklist_btn {
+        margin: 0px 50px;
+    }
+}

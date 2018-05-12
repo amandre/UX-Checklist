@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+	    <script src="js/jquery-2.1.3.js"></script>
+	    <script src="js/script.js"></script>
+        
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <meta name="Author" content="Andrzej Amghar" />
+	   <meta name="Keywords" content="ux, checklist, user experience, report, generator" />
+	   <meta name="Keyphrases" content="front-end developer"/>
+	   <meta name="Description" content="UX Checklist interactive generator. Easily create, fill and generate your UX report." />
+	   <meta name= "robots"  content="all"/>
+	   <meta name= "Googlebot" content="all"/>
+	   <meta name= "Copyright" content="Andrzej Amghar"/>
+        <title>UX Checklist</title>
+	</head>
+	<body>
+        <header>
+            <h1 id='logo'><a href="index.html">UX CHECKLIST</a></h1>
+        </header>
+        <section id="ux_form">
+            <p>Choose on which platform you would like to generate a UX report (Desktop, Mobile, Desktop&Mobile)</p>
+            <main id='checklist'>
+                <span class="checklist_btn" id='desktop_btn'>DESKTOP</span>
+                <span class="checklist_btn" id='desmob_btn'>DESKTOP & MOBILE</span>
+                <span class="checklist_btn" id='mobile_btn'>MOBILE</span>
+                
+                <div id='desktop_content'>
+                    <h3>Checklist questions for <b>Desktop</b></h3>
+                    <div class='questions'>
+                        <form action="" onsubmit="generate()" target="_blank" method="get">
+                            <li>In systems that use overlapping windows, is it easy for users to rearrange windows on the screen?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='4' > NO <input type='checkbox' name="weight" value='-4' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If setting up windows is a low-frequency task, is it particularly easy to remember?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='4' > NO <input type='checkbox' name="weight" value='-4' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Are function keys labeled clearly and distinctively, even if this means breaking consistency rules?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do on-line instructions appear in a consistent location across screens? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            
+                            <li>	
+If pop-up windows are used to display error messages, do they allow the user to see the field in error? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='7' > NO <input type='checkbox' name="weight" value='-7' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Provide a text equivalent for every non-text element <div class='checkboxes'> YES <input type='checkbox' name="weight" value='10' > NO <input type='checkbox' name="weight" value='-10' > N/A <input type='checkbox' name="weight" value='0' ></div>                           </li>
+                            <li>Ensure that all information conveyed with color is also available without color, for example from context or markup <div class='checkboxes'> YES <input type='checkbox' name="weight" value='10' > NO <input type='checkbox' name="weight" value='-10' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Clearly identify changes in the natural language of a document's text and any text equivalents <div class='checkboxes'> YES <input type='checkbox' name="weight" value='8' > NO <input type='checkbox' name="weight" value='-8' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Ensure that foreground and background color combinations provide sufficient contrast when viewed by someone having color deficits or when viewed on a black and white screen <div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If, after best efforts, you cannot create an accessible page, provide a link to an alternative page that uses W3C technologies, is accessible, has equivalent information (or functionality), and is updated as often as the inaccessible (original) page <div class='checkboxes'> YES <input type='checkbox' name="weight" value='8' > NO <input type='checkbox' name="weight" value='-8' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Until user agents allow users to control blinking, avoid causing content to blink<div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Until user agents provide the ability to stop auto-redirect, do not use markup to redirect pages automatically. Instead, configure the server to perform redirects <div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>In multipage data entry screens, is each page labeled to show its relation to others?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is there visual feedback when objects are selected or moved?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is there feedback when function keys are pressed?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If there are observable delays (greater than fifteen seconds) in the system’s response time, is the user kept informed of the system's progress?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='8' > NO <input type='checkbox' name="weight" value='-8' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Typing, cursor motion, mouse selection: 50-1 50 milliseconds<div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+When prompts imply a necessary action, are the words in the message consistent with that action?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Does the system automatically enter a dollar sign and decimal for monetary entries?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='2' > NO <input type='checkbox' name="weight" value='-2' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Has the system been designed so that keys with similar names do not perform opposite (and potentially dangerous) actions?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            
+                            <button type="submit">SUBMIT<img src="images/printer.png"></button>
+                        </form>
+                    </div>
+                </div>
+                <div id='desmob_content'>
+                    <h3>Checklist questions for <b>Desktop & Mobile</b></h3>
+                    <div class='questions'>
+                        <form action="" onsubmit="generate()" target="_blank" method="get">
+                             <li>	
+If pop-up windows are used to display error messages, do they allow the user to see the field in error? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='7' > NO <input type='checkbox' name="weight" value='-7' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Provide a text equivalent for every non-text element <div class='checkboxes'> YES <input type='checkbox' name="weight" value='10' > NO <input type='checkbox' name="weight" value='-10' > N/A <input type='checkbox' name="weight" value='0' ></div>                           </li>
+                            <li>Ensure that all information conveyed with color is also available without color, for example from context or markup <div class='checkboxes'> YES <input type='checkbox' name="weight" value='10' > NO <input type='checkbox' name="weight" value='-10' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Clearly identify changes in the natural language of a document's text and any text equivalents <div class='checkboxes'> YES <input type='checkbox' name="weight" value='8' > NO <input type='checkbox' name="weight" value='-8' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Ensure that foreground and background color combinations provide sufficient contrast when viewed by someone having color deficits or when viewed on a black and white screen <div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If, after best efforts, you cannot create an accessible page, provide a link to an alternative page that uses W3C technologies, is accessible, has equivalent information (or functionality), and is updated as often as the inaccessible (original) page <div class='checkboxes'> YES <input type='checkbox' name="weight" value='8' > NO <input type='checkbox' name="weight" value='-8' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Until user agents allow users to control blinking, avoid causing content to blink<div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Until user agents provide the ability to stop auto-redirect, do not use markup to redirect pages automatically. Instead, configure the server to perform redirects <div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>In multipage data entry screens, is each page labeled to show its relation to others?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is there visual feedback when objects are selected or moved?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is there feedback when function keys are pressed?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If there are observable delays (greater than fifteen seconds) in the system’s response time, is the user kept informed of the system's progress?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='8' > NO <input type='checkbox' name="weight" value='-8' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Typing, cursor motion, mouse selection: 50-1 50 milliseconds<div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+When prompts imply a necessary action, are the words in the message consistent with that action?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Does the system automatically enter a dollar sign and decimal for monetary entries?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='2' > NO <input type='checkbox' name="weight" value='-2' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Has the system been designed so that keys with similar names do not perform opposite (and potentially dangerous) actions?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            
+                            <li>Use navigation mechanisms in a consistent manner <div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div>
+                        </li>
+                            <li>	
+Are character edits allowed in commands?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='2' > NO <input type='checkbox' name="weight" value='-2' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+Can users type-ahead in a system with many nested menus?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Provide navigation bars to highlight and give access to the navigation mechanism <div class='checkboxes'> YES <input type='checkbox' name="weight" value='10' > NO <input type='checkbox' name="weight" value='-10' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Use the clearest and simplest language appropriate for a site's content <div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do menu instructions, prompts, and error messages appear in the same place(s) on each menu?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is there visual feedback in menus or dialog boxes about which choices are selectable?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='4' > NO <input type='checkbox' name="weight" value='-4' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is there some form of system feedback for every operator action?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='4' > NO <input type='checkbox' name="weight" value='-4' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is the current status of an icon clearly indicated? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='4' > NO <input type='checkbox' name="weight" value='-4' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Are response times appropriate to the task?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='8' > NO <input type='checkbox' name="weight" value='-8' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do GUI menus make obvious whether deselection is possible?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do GUI menus make obvious which item has been selected? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Are icons concrete and familiar?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If there is a natural sequence to menu choices, has it been used?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+Are icons labeled?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do GUI menus offer activation: that is, make obvious how to say "now do it"?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If menu lists are long (more than seven items), can users select an item either by moving the cursor or by typing a mnemonic code?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+Are menus broad (many items on a menu) rather than deep (many menu levels)?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+If the system has multiple menu levels, is there a mechanism that allows users to go back to previous menus?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+If users can go back to a previous menu, can they change their earlier menu choice?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+Can users set their own system, session, file, and screen defaults?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>
+Have industry or company formatting standards been followed consistently in all screens within a system?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>
+Does each window have a title?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Are vertical and horizontal scrolling possible in each window? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <button type="submit">SUBMIT<img src="images/printer.png"></button>
+                        </form>
+                    </div>
+                </div>
+                <div id='mobile_content'>
+                    <h3>Checklist questions for <b>Mobile</b></h3>
+                    <div class='questions'>
+                        <form action="" onsubmit="generate()" target="_blank" method="get">
+                            <li>Use navigation mechanisms in a consistent manner <div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div>
+                        </li>
+                            <li>	
+Are character edits allowed in commands?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='2' > NO <input type='checkbox' name="weight" value='-2' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+Can users type-ahead in a system with many nested menus?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='6' > NO <input type='checkbox' name="weight" value='-6' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Provide navigation bars to highlight and give access to the navigation mechanism <div class='checkboxes'> YES <input type='checkbox' name="weight" value='10' > NO <input type='checkbox' name="weight" value='-10' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Use the clearest and simplest language appropriate for a site's content <div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do menu instructions, prompts, and error messages appear in the same place(s) on each menu?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is there visual feedback in menus or dialog boxes about which choices are selectable?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='4' > NO <input type='checkbox' name="weight" value='-4' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is there some form of system feedback for every operator action?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='4' > NO <input type='checkbox' name="weight" value='-4' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Is the current status of an icon clearly indicated? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='4' > NO <input type='checkbox' name="weight" value='-4' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Are response times appropriate to the task?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='8' > NO <input type='checkbox' name="weight" value='-8' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do GUI menus make obvious whether deselection is possible?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do GUI menus make obvious which item has been selected? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Are icons concrete and familiar?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If there is a natural sequence to menu choices, has it been used?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+Are icons labeled?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='3' > NO <input type='checkbox' name="weight" value='-3' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>Do GUI menus offer activation: that is, make obvious how to say "now do it"?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>If menu lists are long (more than seven items), can users select an item either by moving the cursor or by typing a mnemonic code?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+Are menus broad (many items on a menu) rather than deep (many menu levels)?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+If the system has multiple menu levels, is there a mechanism that allows users to go back to previous menus?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+If users can go back to a previous menu, can they change their earlier menu choice?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <li>	
+Can users set their own system, session, file, and screen defaults?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>
+Have industry or company formatting standards been followed consistently in all screens within a system?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>
+Does each window have a title?<div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div> </li>
+                            <li>Are vertical and horizontal scrolling possible in each window? <div class='checkboxes'> YES <input type='checkbox' name="weight" value='5' > NO <input type='checkbox' name="weight" value='-5' > N/A <input type='checkbox' name="weight" value='0' ></div></li>
+                            <button type="submit">SUBMIT<img src="images/printer.png"></button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <footer>
+            <article id=
+'about'><h2>About us</h2><p>Two young and enthusiastic students trying to make the UX designer's life easier</p></article>
+            <div id='social_icons'>
+                <a href="facebook" id=><img alt="facebook" src="images/fb.png"/></a>
+                <a href="skype" id=><img alt="skype" src="images/skype.png"/></a>
+                <a href="tweeter" id=><img alt="tweeter" src="images/tweeter.png"/></a>
+            </div>
+        </footer>
+    </body>
+</html>
